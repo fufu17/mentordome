@@ -5,6 +5,7 @@ import ButtonGroup from '../elements/ButtonGroup';
 import Button from '../elements/Button';
 import Image from '../elements/Image';
 import Modal from '../elements/Modal';
+import LandingPageImage from './partials/LandingPageImage';
 
 const propTypes = {
   ...SectionProps.types
@@ -35,10 +36,10 @@ const Hero = ({
   const closeModal = (e) => {
     e.preventDefault();
     setVideomodalactive(false);
-  }   
+  }
 
   const outerClasses = classNames(
-    'hero section center-content',
+    'hero section',
     topOuterDivider && 'has-top-divider',
     bottomOuterDivider && 'has-bottom-divider',
     hasBgColor && 'has-bg-color',
@@ -52,34 +53,73 @@ const Hero = ({
     bottomDivider && 'has-bottom-divider'
   );
 
+  const headerLeft = {
+    textAlign: 'left'
+  };
+
+  const leftBox = {
+    marginTop: "60px",
+    marginBottom: "140px",
+  };
+
+  const splitClasses = classNames(
+    'split-wrap'
+  );
+
+  const align = {
+    alignItems: 'center',
+    marginLeft: '100px'
+  };
+
   return (
     <section
       {...props}
       className={outerClasses}
     >
-      <div className="container-sm">
+      <div className="container" style={leftBox}>
         <div className={innerClasses}>
-          <div className="hero-content">
-            <h1 className="mt-0 mb-16 reveal-from-bottom" data-reveal-delay="200">
-              Tier 1 Coaching and Mentoring for <span className="text-color-primary">Engineers</span> and <span className="text-color-primary">Students</span>
-            </h1>
-            <div className="container-xs">
-              <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="400">
-                We have engineers from the best companies to help you find prepare for technical interview and gain advice to improve your career
+          <div className={splitClasses} style={headerLeft}>
+            <div className="split-item" style={align}>
+              <div className="split-item-content center-content-mobile" data-reveal-container=".split-item">
+                <h2 className="mt-16 mb-32 reveal-from-bottom" data-reveal-delay="200">
+                  Tier 1 Mentoring for <br></br><span className="text-color-primary">Engineers</span> and <span className="text-color-primary">Students</span>
+                </h2>
+                <p className="mb-32 reveal-from-bottom" data-reveal-delay="400">
+                  We have engineers from the best companies to <br></br> help you find prepare for technical interview and <br></br> gain advice to improve your career
                 </p>
-              <div className="reveal-from-bottom" data-reveal-delay="600">
-                <ButtonGroup>
-                  <Button tag="a" color="primary" wideMobile href="https://cruip.com/">
-                    Get started
+                <div className="reveal-from-bottom" data-reveal-delay="600">
+                  <ButtonGroup>
+                    <Button tag="a" color="primary" wideMobile href="/">
+                      Get started
                     </Button>
-                  <Button tag="a" color="dark" wideMobile href="https://github.com/cruip/open-react-template/">
-                    Contact Us
+                    <Button tag="a" color="dark" wideMobile href="/">
+                      Contact Us
                     </Button>
-                </ButtonGroup>
+                  </ButtonGroup>
+                </div>
+              </div>
+              <div className={
+                classNames(
+                  'split-item-image center-content-mobile reveal-from-bottom'
+                  && 'split-item-image-fill'
+                )}
+                data-reveal-container=".split-item">
+                <LandingPageImage />
               </div>
             </div>
           </div>
-          <div className="hero-figure reveal-from-bottom illustration-element-01" data-reveal-value="20px" data-reveal-delay="800">
+        </div>
+      </div>
+    </section>
+  );
+}
+
+Hero.propTypes = propTypes;
+Hero.defaultProps = defaultProps;
+
+export default Hero;
+
+{/* <div className="hero-figure reveal-from-bottom illustration-element-01" data-reveal-value="20px" data-reveal-delay="800">
             <a
               data-video="https://player.vimeo.com/video/174002812"
               href="#0"
@@ -99,14 +139,4 @@ const Hero = ({
             show={videoModalActive}
             handleClose={closeModal}
             video="https://player.vimeo.com/video/174002812"
-            videoTag="iframe" />
-        </div>
-      </div>
-    </section>
-  );
-}
-
-Hero.propTypes = propTypes;
-Hero.defaultProps = defaultProps;
-
-export default Hero;
+            videoTag="iframe" /> */}
