@@ -23,8 +23,8 @@ const LandingPageImage = ({
           <Image
             src={require('./../../../assets/images/landing_page_picture.png')}
             alt="Open"
-            width={300}
-            height={300} />
+            width={350}
+            height={400} />
         </Link>
       </h1>
     </div>

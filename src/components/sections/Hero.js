@@ -81,9 +81,9 @@ const Hero = ({
           <div className={splitClasses} style={headerLeft}>
             <div className="split-item" style={align}>
               <div className="split-item-content center-content-mobile" data-reveal-container=".split-item">
-                <h2 className="mt-16 mb-32 reveal-from-bottom" data-reveal-delay="200">
+                <h1 className="mt-16 mb-32 reveal-from-bottom" data-reveal-delay="200">
                   Tier 1 Mentoring for <br></br><span className="text-color-primary">Engineers</span> and <span className="text-color-primary">Students</span>
-                </h2>
+                </h1>
                 <p className="mb-32 reveal-from-bottom" data-reveal-delay="400">
                   We have engineers from the best companies to <br></br> help you find prepare for technical interview and <br></br> gain advice to improve your career
                 </p>
