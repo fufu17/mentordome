@@ -47,13 +47,17 @@ const Companies = ({
     title: 'Companies that our Mentors come from',
   };
 
+  const paddingTop = {
+      paddingTop: "60px"
+  }
+
   return (
     <section
       {...props}
       className={outerClasses}
     >
       <div className="container">
-        <div className={innerClasses}>
+        <div className={innerClasses} style={paddingTop}>
           <SectionHeader data={sectionHeader} className="center-content" />
           <div className={tilesClasses}>
 
@@ -122,6 +126,34 @@ const Companies = ({
                       alt="Features tile icon 05"
                       width={108}
                       height={108}  />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="tiles-item reveal-from-bottom" data-reveal-delay="400">
+              <div className="tiles-item-inner">
+                <div className="features-tiles-item-header">
+                  <div className="mb-12">
+                    <Image
+                      src={require('./../../assets/images/lyft-logo.svg')}
+                      alt="Features tile icon 06"
+                      width={224}
+                      height={224} />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="tiles-item reveal-from-bottom" data-reveal-delay="400">
+              <div className="tiles-item-inner">
+                <div className="features-tiles-item-header">
+                  <div className="mb-12">
+                    <Image
+                      src={require('./../../assets/images/microsoft-logo.svg')}
+                      alt="Features tile icon 06"
+                      width={108}
+                      height={108} />
                   </div>
                 </div>
               </div>
