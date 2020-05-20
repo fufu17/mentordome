@@ -68,8 +68,8 @@ const Companies = ({
                     <Image
                       src={require('./../../assets/images/apple-black.svg')}
                       alt="Company icon 01"
-                      width={96}
-                      height={96}  />
+                      width={68}
+                      height={68}  />
                   </div>
                 </div>
               </div>
@@ -82,8 +82,8 @@ const Companies = ({
                     <Image
                       src={require('./../../assets/images/facebook_logo.png')}
                       alt="Company icon 02"
-                      width={108}
-                      height={108}  />
+                      width={76}
+                      height={76}  />
                   </div>
                 </div>
               </div>
@@ -96,8 +96,8 @@ const Companies = ({
                     <Image
                       src={require('./../../assets/images/google-icon.svg')}
                       alt="Company icon 03"
-                      width={108}
-                      height={108}  />
+                      width={76}
+                      height={76}  />
                   </div>
                 </div>
               </div>
@@ -110,8 +110,8 @@ const Companies = ({
                     <Image
                       src={require('./../../assets/images/amazon-icon-1.svg')}
                       alt="Features tile icon 04"
-                      width={108}
-                      height={108}  />
+                      width={76}
+                      height={76}  />
                   </div>
                 </div>
               </div>
@@ -124,8 +124,8 @@ const Companies = ({
                     <Image
                       src={require('./../../assets/images/linkedin.svg')}
                       alt="Features tile icon 05"
-                      width={108}
-                      height={108}  />
+                      width={76}
+                      height={76}  />
                   </div>
                 </div>
               </div>
@@ -138,8 +138,8 @@ const Companies = ({
                     <Image
                       src={require('./../../assets/images/lyft-logo.svg')}
                       alt="Features tile icon 06"
-                      width={224}
-                      height={224} />
+                      width={184}
+                      height={184} />
                   </div>
                 </div>
               </div>
@@ -152,8 +152,8 @@ const Companies = ({
                     <Image
                       src={require('./../../assets/images/microsoft-logo.svg')}
                       alt="Features tile icon 06"
-                      width={108}
-                      height={108} />
+                      width={76}
+                      height={76} />
                   </div>
                 </div>
               </div>
@@ -166,8 +166,8 @@ const Companies = ({
                     <Image
                       src={require('./../../assets/images/airbnb.svg')}
                       alt="Features tile icon 06"
-                      width={108}
-                      height={108} />
+                      width={84}
+                      height={84} />
                   </div>
                 </div>
               </div>

@@ -83,7 +83,7 @@ const FeaturesSplit = ({
                 )}
                 data-reveal-container=".split-item">
                 <Image
-                  src={require('./../../assets/images/features-split-image-01.png')}
+                  src={require('./../../assets/images/pre-screening.png')}
                   alt="Features split 01"
                   width={528}
                   height={396} />
@@ -109,7 +109,7 @@ const FeaturesSplit = ({
                 )}
                 data-reveal-container=".split-item">
                 <Image
-                  src={require('./../../assets/images/features-split-image-02.png')}
+                  src={require('./../../assets/images/mentorship-pairing.png')}
                   alt="Features split 02"
                   width={528}
                   height={396} />
@@ -122,7 +122,7 @@ const FeaturesSplit = ({
                   Step Three
                   </div>
                 <h3 className="mt-0 mb-12">
-                  Mentorship!
+                  Mentorship
                   </h3>
                 <p className="m-0">
                   You and the mentor are now able to focus on completing hourly mentorship sessions in our various services with your own fixed schedule. We will help to closely monitor your progress through daily reports from the mentors.
@@ -135,10 +135,10 @@ const FeaturesSplit = ({
                 )}
                 data-reveal-container=".split-item">
                 <Image
-                  src={require('./../../assets/images/features-split-image-03.png')}
+                  src={require('./../../assets/images/mentorship.png')}
                   alt="Features split 03"
                   width={528}
-                  height={396} />
+                  height={500} />
               </div>
             </div>
 
@@ -156,15 +156,14 @@ const FeaturesSplit = ({
               </div>
               <div className={
                 classNames(
-                  'split-item-image center-content-mobile reveal-from-bottom',
-                  imageFill && 'split-item-image-fill'
+                  'center-content-mobile reveal-from-bottom'
                 )}
                 data-reveal-container=".split-item">
                 <Image
-                  src={require('./../../assets/images/features-split-image-02.png')}
+                  src={require('./../../assets/images/feedback.png')}
                   alt="Features split 04"
-                  width={528}
-                  height={396} />
+                  width={428}
+                  height={196} />
               </div>
             </div>
 
