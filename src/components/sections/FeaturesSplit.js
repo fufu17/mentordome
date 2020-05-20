@@ -50,8 +50,8 @@ const FeaturesSplit = ({
   );
 
   const sectionHeader = {
-    title: 'How the Process Works',
-    paragraph: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum — semper quis lectus nulla at volutpat diam ut venenatis.'
+    title: 'How It Works',
+    paragraph: 'Whether you are a student trying to find a software engineering job or a junior engineer that wants to improve their general coding ability, Mentordome is here to help! We have a robust process that will allow us to pair you with top tier engineers.'
   };
 
   return (
@@ -67,13 +67,13 @@ const FeaturesSplit = ({
             <div className="split-item">
               <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item">
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  Lightning fast workflow
+                  Step one
                   </div>
                 <h3 className="mt-0 mb-12">
-                  Data-driven insights
+                  Pre-Screening Interview
                   </h3>
                 <p className="m-0">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua — Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  In order to place you with our best mentor possible, we first need to figure out which area you will need the most help in. Therefore, we will schedule a 1:1 interview with you so that we can gauge what area you need help in. This may include a technical exercise.
                   </p>
               </div>
               <div className={
@@ -93,13 +93,13 @@ const FeaturesSplit = ({
             <div className="split-item">
               <div className="split-item-content center-content-mobile reveal-from-right" data-reveal-container=".split-item">
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  Lightning fast workflow
+                  Step two
                   </div>
                 <h3 className="mt-0 mb-12">
-                  Data-driven insights
+                  Mentorship Pairing
                   </h3>
                 <p className="m-0">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua — Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  After the pre-screening, Mentordome will reach out to you with a mentorship pairing. You and the mentor will be able to schedule the best time for mentorship 1:1 and we will working closely with you to help you acheive your goals.
                   </p>
               </div>
               <div className={
@@ -119,13 +119,13 @@ const FeaturesSplit = ({
             <div className="split-item">
               <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item">
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  Lightning fast workflow
+                  Step Three
                   </div>
                 <h3 className="mt-0 mb-12">
-                  Data-driven insights
+                  Mentorship!
                   </h3>
                 <p className="m-0">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua — Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  You and the mentor are now able to focus on completing hourly mentorship sessions in our various services with your own fixed schedule. We will help to closely monitor your progress through daily reports from the mentors.
                   </p>
               </div>
               <div className={
@@ -137,6 +137,32 @@ const FeaturesSplit = ({
                 <Image
                   src={require('./../../assets/images/features-split-image-03.png')}
                   alt="Features split 03"
+                  width={528}
+                  height={396} />
+              </div>
+            </div>
+
+            <div className="split-item">
+              <div className="split-item-content center-content-mobile reveal-from-right" data-reveal-container=".split-item">
+                <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
+                Step Four
+                  </div>
+                <h3 className="mt-0 mb-12">
+                Feedback Consultation
+                  </h3>
+                <p className="m-0">
+                After every mentorship/tutoring session, you will be able to give feedback to your mentor and we will be able to talk with you if you have any problems with the mentorship. You will also be allowed to ask to switch mentors in case there are any problems.
+                  </p>
+              </div>
+              <div className={
+                classNames(
+                  'split-item-image center-content-mobile reveal-from-bottom',
+                  imageFill && 'split-item-image-fill'
+                )}
+                data-reveal-container=".split-item">
+                <Image
+                  src={require('./../../assets/images/features-split-image-02.png')}
+                  alt="Features split 04"
                   width={528}
                   height={396} />
               </div>

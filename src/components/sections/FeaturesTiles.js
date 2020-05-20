@@ -71,7 +71,7 @@ const FeaturesTiles = ({
                 </div>
                 <div className="features-tiles-item-content">
                   <h4 className="mt-0 mb-8">
-                    Mentorship of Junior Engineers
+                  <span className="text-color-primary">Mentorship</span>  of <span className="text-color-primary">Junior</span>  Engineers
                     </h4>
                   <p className="m-0 text-sm">
                     If you're a junior or entry level entry engineer who wants get better as a coder, we offer 1:1 with high level engineers from top tech Companies including Facebook, Google, and Amazon.
@@ -93,7 +93,7 @@ const FeaturesTiles = ({
                 </div>
                 <div className="features-tiles-item-content">
                   <h4 className="mt-0 mb-8">
-                    Recruitment Mentoring and Resume Prep
+                  <span className="text-color-primary">Recruitment</span>  Mentoring and <span className="text-color-primary">Resume</span>  Prep
                     </h4>
                   <p className="m-0 text-sm">
                     We provide entry level students and engineers with mentors that will help them to screen resumes and provide them consulting into how to recruit for tech companies for internship and full times positions.
@@ -115,10 +115,10 @@ const FeaturesTiles = ({
                 </div>
                 <div className="features-tiles-item-content">
                   <h4 className="mt-0 mb-8">
-                    Technical Interview Tutoring for Top Tech Companies
+                  <span className="text-color-primary">General</span> Tech Path Mentorship
                     </h4>
                   <p className="m-0 text-sm">
-                    We provide technical interview tutoring with mentors from top tech companies with many years of interviewing experience for those who wants to ace the technical portion of the interviews.
+                  Interested in Computer Science but not sure where to go? We offer mentorship services to help you determine which path for computer science is right for you! 
                     </p>
                 </div>
               </div>
@@ -137,7 +137,7 @@ const FeaturesTiles = ({
                 </div>
                 <div className="features-tiles-item-content">
                   <h4 className="mt-0 mb-8">
-                    Behavioral Interview Prepartion for Top Tech Companies
+                  <span className="text-color-primary">Behavioral</span> Interview Prepartion for Top Tech Companies
                     </h4>
                   <p className="m-0 text-sm">
                     We also offer behavioral interview preparation with top tier tutors for those who are having trouble with speaking about themselves during interview with tech companies
@@ -159,10 +159,10 @@ const FeaturesTiles = ({
                 </div>
                 <div className="features-tiles-item-content">
                   <h4 className="mt-0 mb-8">
-                    General Tech Path Mentorship
+                  <span className="text-color-primary">Technical</span> Interview Tutoring for Top Tech Companies
                     </h4>
                   <p className="m-0 text-sm">
-                    Interested in Computer Science but not sure where to go? We offer mentorship services to help you determine which path for computer science is right for you!
+                    We provide technical interview tutoring with mentors from top tech companies with many years of interviewing experience for those who wants to ace the technical portion of the interviews.
                     </p>
                 </div>
               </div>
