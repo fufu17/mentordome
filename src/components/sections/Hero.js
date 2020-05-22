@@ -68,7 +68,7 @@ const Hero = ({
 
   const align = {
     alignItems: 'center',
-    marginLeft: '100px'
+    // marginLeft: '100px'
   };
 
   return (

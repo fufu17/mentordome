@@ -186,7 +186,7 @@
 	@if( unit( $height ) == '%' ) {
 		background-size: contain;
 	} @else {
-		background-size: auto;
+		background-size: cover;
 	}
 	@if ( $hoffset ) {
 		left: calc(50% + #{$hoffset});

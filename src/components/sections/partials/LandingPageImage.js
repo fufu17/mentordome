@@ -21,10 +21,10 @@ const LandingPageImage = ({
       <h1 className="m-0">
         <Link to="/">
           <Image
-            src={require('./../../../assets/images/landing_page_picture.png')}
+            src={require('./../../../assets/images/up.png')}
             alt="Open"
-            width={350}
-            height={400} />
+            width={1000}
+            height={1000} />
         </Link>
       </h1>
     </div>
