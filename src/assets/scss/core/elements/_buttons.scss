@@ -26,6 +26,8 @@
 	&:hover {
 		background-color: color-bg(button-light-hover);
 		border-color: color-border(button-light-hover);
+		transform: translateY(-2px);
+    	// box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 	}
 
 	&.is-loading {

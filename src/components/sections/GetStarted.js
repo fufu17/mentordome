@@ -41,11 +41,15 @@ const GetStarted = ({
     );
 
     const formColor = {
-        backgroundColor: 'lightgrey',
+        backgroundColor: '#E8E8E8',
         paddingTop: '40px',
         paddingBottom: '40px',
         borderRadius: '20px',
-        boxShadow: '10px 15px #888888'
+        boxShadow: '10px 15px #C8C8C8'
+    }
+
+    const inputDec = {
+        borderRadius: "11px"
     }
 
     return (
@@ -68,19 +72,19 @@ const GetStarted = ({
                                     <form style={formColor}>
                                         <label>
                                         <span className="text-color-primary"> <b>First Name:</b></span> &nbsp;
-                                        <input type="text" name="name" />
+                                        <input style={inputDec} type="text" name="name" />
                                         </label>
                                         <br />
                                         <br />
                                         <label>
                                         <span className="text-color-primary"> <b>Last Name:</b></span> &nbsp;
-                                        <input type="text" name="name" />
+                                        <input style={inputDec} type="text" name="name" />
                                         </label>
                                         <br />
                                         <br />
                                         <label>
                                         <span className="text-color-primary"> <b>Email:</b></span> &nbsp;
-                                        <input type="text" name="name" />
+                                        <input  style={inputDec}type="text" name="name" />
                                         </label>
                                         <br />
                                         <br />
@@ -98,14 +102,14 @@ const GetStarted = ({
                                         <br />
                                         <label>
                                         <span className="text-color-primary"> <b>Reason For Joining:</b></span> &nbsp;
-                                        <textarea type="text" name="reason" rows="4" cols="50"/>
+                                        <textarea style={inputDec} type="text" name="reason" rows="4" cols="50"/>
                                         </label>
                                         <br />
                                         <br />
                                         <br />
                                         <label>
                                         <span className="text-color-primary"> <b>Questions and Concerns:</b></span> &nbsp;
-                                        <textarea type="text" name="questions" rows="4" cols="50" />
+                                        <textarea style={inputDec} type="text" name="questions" rows="4" cols="50" />
                                         </label>
                                         <br />
                                         <br />
