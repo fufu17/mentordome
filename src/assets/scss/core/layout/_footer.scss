@@ -124,7 +124,7 @@
 		&:hover {
 
 			svg {
-				fill: color-icon(social-hover);
+				fill: get-color(primary, 1);
 
 				.invert-color & {
 					fill: color-icon(social-hover-inverse);

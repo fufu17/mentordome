@@ -45,7 +45,6 @@ const GetStarted = ({
         paddingTop: '40px',
         paddingBottom: '40px',
         borderRadius: '20px',
-        boxShadow: '10px 15px #C8C8C8'
     }
 
     const inputDec = {

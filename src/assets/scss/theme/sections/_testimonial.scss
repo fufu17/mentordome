@@ -1,7 +1,8 @@
 .testimonial {
 
 	.tiles-item-inner {
-		background: get-color(dark, 1);		
+        background: whitesmoke;
+        border-radius: 10px;	
 	}
 }
 
@@ -33,14 +34,14 @@
 }
 
 .testimonial-item-link {
-	color: get-color(secondary, 3);
+	color: get-color(primary, 3);
 
 	a {
-        color: get-color(secondary, 3);
+        color: get-color(primary, 3);
         text-decoration: none;
 
         &:hover {
-            color: get-color(secondary, 2);
+            color: darken(get-color(primary, 1), 20%);
         }
 	}
 }
