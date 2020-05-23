@@ -1,10 +1,24 @@
 import React, { useState } from 'react';
 import classNames from 'classnames';
 import { SectionProps } from '../../utils/SectionProps';
-import ButtonGroup from '../elements/ButtonGroup';
 import Button from '../elements/Button';
-import Image from '../elements/Image';
-import Modal from '../elements/Modal';
+import firebase from 'firebase';
+import { confirmAlert } from 'react-confirm-alert';
+import 'react-confirm-alert/src/react-confirm-alert.css';
+
+//initialize firebase
+var firebaseConfig = {
+    apiKey: "AIzaSyCe7C6TU9Mp_WzqfqnJs_C12RvG98kDrpU",
+    authDomain: "mentordome-886a6.firebaseapp.com",
+    databaseURL: "https://mentordome-886a6.firebaseio.com",
+    projectId: "mentordome-886a6",
+    storageBucket: "mentordome-886a6.appspot.com",
+    messagingSenderId: "817983847446",
+    appId: "1:817983847446:web:44b5290f804dbac8ae4937",
+    measurementId: "G-DWL2YJJJKY"
+};
+firebase.initializeApp(firebaseConfig);
+firebase.analytics();
 
 const propTypes = {
     ...SectionProps.types
@@ -12,6 +26,10 @@ const propTypes = {
 
 const defaultProps = {
     ...SectionProps.defaults
+}
+
+const confirmButtonStyling = {
+    float: "right"
 }
 
 const GetStarted = ({
@@ -24,6 +42,49 @@ const GetStarted = ({
     invertColor,
     ...props
 }) => {
+
+    function submitForm(e) {
+        e.preventDefault();
+        const applicantsRef = firebase.database().ref('applicants');
+        const applicant = {
+            first_name: document.getElementById('first_name').value,
+            last_name: document.getElementById('last_name').value,
+            email: document.getElementById('email').value,
+            occupation: document.getElementById('occupation').value,
+            reason: document.getElementById('reason').value,
+            questions: document.getElementById('questions').value
+        }
+        applicantsRef.push(applicant);
+        document.getElementById('first_name').value = "";
+        document.getElementById('last_name').value = "";
+        document.getElementById('email').value = "";
+        document.getElementById('occupation').value = "student";
+        document.getElementById('reason').value = "";
+        document.getElementById('questions').value = "";
+
+        confirmAlert({
+            title: 'Thanks for joining us!',
+            message: 'We look forward to working with you and will get back to you within the next day.',
+            buttons: [
+                {
+                    label: 'Done',
+                    onClick: () =>  window.location.reload(false)
+                }
+            ],
+            customUI: ({ onClose }) => {
+                return (
+                  <div className='custom-ui'>
+                    <h1><span className="text-color-primary">Thanks</span> for joining us!</h1>
+                    <p className="text-color-low" >We look forward to working with you and will get back to you within the next day.</p>
+                    <Button style={confirmButtonStyling} color="primary" onClick={onClose}>Done</Button>
+                  </div>
+                );
+              },
+            afterClose: () => { window.location.reload(false); },
+            onClickOutside: () => { window.location.reload(false); },
+            onKeypressEscape: () => { window.location.reload(false); }
+        })
+    }
 
     const outerClasses = classNames(
         'hero section center-content',
@@ -70,29 +131,29 @@ const GetStarted = ({
                                 <div>
                                     <form style={formColor}>
                                         <label>
-                                        <span className="text-color-primary"> <b>First Name:</b></span> &nbsp;
-                                        <input style={inputDec} type="text" name="name" />
+                                            <span className="text-color-primary"> <b>First Name:</b></span> &nbsp;
+                                        <input id="first_name" style={inputDec} type="text" name="first_name" />
                                         </label>
                                         <br />
                                         <br />
                                         <label>
-                                        <span className="text-color-primary"> <b>Last Name:</b></span> &nbsp;
-                                        <input style={inputDec} type="text" name="name" />
+                                            <span className="text-color-primary"> <b>Last Name:</b></span> &nbsp;
+                                        <input id="last_name" style={inputDec} type="text" name="last_name" />
                                         </label>
                                         <br />
                                         <br />
                                         <label>
-                                        <span className="text-color-primary"> <b>Email:</b></span> &nbsp;
-                                        <input  style={inputDec}type="text" name="name" />
+                                            <span className="text-color-primary"> <b>Email:</b></span> &nbsp;
+                                        <input id="email" style={inputDec} type="text" name="email" />
                                         </label>
                                         <br />
                                         <br />
                                         <label>
-                                        <span className="text-color-primary"> <b>Occupation:</b></span> &nbsp;
-                                            <select>
+                                            <span className="text-color-primary"> <b>Occupation:</b></span> &nbsp;
+                                            <select id="occupation">
                                                 <option selected value="student">Student</option>
                                                 <option value="junior engineer">Junior Engineer</option>
-                                                <option value="coconut">Freelancer</option>
+                                                <option value="freelancer">Freelancer</option>
                                                 <option value="non-tech">Non-Tech</option>
                                             </select>
                                         </label>
@@ -100,20 +161,20 @@ const GetStarted = ({
                                         <br />
                                         <br />
                                         <label>
-                                        <span className="text-color-primary"> <b>Reason For Joining:</b></span> &nbsp;
-                                        <textarea style={inputDec} type="text" name="reason" rows="4" cols="50"/>
+                                            <span className="text-color-primary"> <b>Reason For Joining:</b></span> &nbsp;
+                                        <textarea id="reason" style={inputDec} type="text" name="reason" rows="4" cols="50" />
                                         </label>
                                         <br />
                                         <br />
                                         <br />
                                         <label>
-                                        <span className="text-color-primary"> <b>Questions and Concerns:</b></span> &nbsp;
-                                        <textarea style={inputDec} type="text" name="questions" rows="4" cols="50" />
+                                            <span className="text-color-primary"> <b>Questions and Concerns:</b></span> &nbsp;
+                                        <textarea id="questions" style={inputDec} type="text" name="questions" rows="4" cols="50" />
                                         </label>
                                         <br />
                                         <br />
                                         <br />
-                                        <Button type="submit" tag="a" color="primary">
+                                        <Button type="submit" tag="a" color="primary" onClick={submitForm}>
                                             Submit
                                         </Button>
                                     </form>

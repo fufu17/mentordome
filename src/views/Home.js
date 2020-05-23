@@ -15,9 +15,9 @@ const Home = () => {
       <Hero className="illustration-section-01" />
       <FeaturesTiles />
       <WhyChooseUs topDivider />
-      <Companies topDivider />
-      <FeaturesSplit invertMobile topDivider imageFill className="illustration-section-02" />
       <Testimonial topDivider />
+      <FeaturesSplit invertMobile topDivider imageFill className="illustration-section-02" />
+      <Companies topDivider />
       <Cta split />
     </>
   );
