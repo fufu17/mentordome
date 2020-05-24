@@ -44,7 +44,7 @@ const Companies = ({
   );
 
   const sectionHeader = {
-    title: 'Companies that our Mentors come from',
+    title: 'Our Mentors Come from These Companies',
   };
 
   const paddingTop = {

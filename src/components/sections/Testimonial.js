@@ -72,7 +72,7 @@ const Testimonial = ({
                   height={396} />
                 <div className="testimonial-item-content">
                   <p className="text-sm text-color-low mb-0">
-                    — I loved MentorDome
+                    — What I really liked about mentordome is that I only have to pay for the hours that I needed. It helped to have time to study on my own while going to them for mock interviews and help with speaking through the interview. My mentor was also really amazing and helping me answer all of the questions that I had.
                       </p>
                 </div>
                 <div className="testimonial-item-footer text-xs mt-32 mb-0 has-top-divider">
@@ -94,7 +94,7 @@ const Testimonial = ({
                   height={396} />
                 <div className="testimonial-item-content">
                   <p className="text-sm text-color-low mb-0">
-                    — MentorDome was great
+                    — My mentor was a really kind and amazing person that helping me to navigate through the computer science industry. I started mentordome thinking about switching into computer science and I am really happy to have gotten a job out of it!
                       </p>
                 </div>
                 <div className="testimonial-item-footer text-xs mt-32 mb-0 has-top-divider">

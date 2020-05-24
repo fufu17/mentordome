@@ -45,7 +45,7 @@ const WhyChooseUs = ({
 
     const sectionHeader = {
         title: 'Why Choose Us?',
-        paragraph: 'Mentordome offers a variety of mentoring services that will help you to get more interviews and offers at top tier tech companies or improve as an engineer.'
+        paragraph: "We offer very flexible and competitive rates while allowing you to work based on your own schedule."
     };
 
     const paddingTop = {
@@ -65,20 +65,20 @@ const WhyChooseUs = ({
                         <div className="tiles-item reveal-from-bottom">
                             <div className="tiles-item-inner">
                                 <div className="features-tiles-item-header">
-                                    <div className="features-tiles-item-image mb-16">
+                                    <div className="mb-16">
                                         <Image
-                                            src={require('./../../assets/images/feature-tile-icon-01.svg')}
-                                            alt="Features tile icon 01"
+                                            src={require('./../../assets/images/price.svg')}
+                                            alt="Price"
                                             width={64}
                                             height={64} />
                                     </div>
                                 </div>
                                 <div className="features-tiles-item-content">
                                     <h4 className="mt-0 mb-8">
-                                        <span className="text-color-primary">Mentorship</span>  of <span className="text-color-primary">Junior</span>  Engineers
+                                        <span className="text-color-primary">Competitive</span>  Rates
                     </h4>
                                     <p className="m-0 text-sm">
-                                        If you're a junior or entry level entry engineer who wants get better as a coder, we offer 1:1 with high level engineers from top tech Companies including Facebook, Google, and Amazon.
+                                        We offer cheaper prices and more flexible packages that all of our competitors in the tech career accelerator space and online tech interview coaching.
                     </p>
                                 </div>
                             </div>
@@ -87,20 +87,20 @@ const WhyChooseUs = ({
                         <div className="tiles-item reveal-from-bottom" data-reveal-delay="200">
                             <div className="tiles-item-inner">
                                 <div className="features-tiles-item-header">
-                                    <div className="features-tiles-item-image mb-16">
+                                    <div className="mb-16">
                                         <Image
-                                            src={require('./../../assets/images/feature-tile-icon-02.svg')}
-                                            alt="Features tile icon 02"
+                                            src={require('./../../assets/images/schedule.svg')}
+                                            alt="Schedule"
                                             width={64}
                                             height={64} />
                                     </div>
                                 </div>
                                 <div className="features-tiles-item-content">
                                     <h4 className="mt-0 mb-8">
-                                        <span className="text-color-primary">Recruitment</span>  Mentoring and <span className="text-color-primary">Resume</span>  Prep
+                                        <span className="text-color-primary">Flexible</span>  Schedule
                     </h4>
                                     <p className="m-0 text-sm">
-                                        We provide entry level students and engineers with mentors that will help them to screen resumes and provide them consulting into how to recruit for tech companies for internship and full times positions.
+                                        We allow you to have a flexible schedule in that you can decide when to have classes and give constant feedback on the performance of the mentors.
                     </p>
                                 </div>
                             </div>
@@ -109,20 +109,20 @@ const WhyChooseUs = ({
                         <div className="tiles-item reveal-from-bottom" data-reveal-delay="400">
                             <div className="tiles-item-inner">
                                 <div className="features-tiles-item-header">
-                                    <div className="features-tiles-item-image mb-16">
+                                    <div className="mb-16">
                                         <Image
-                                            src={require('./../../assets/images/feature-tile-icon-03.svg')}
-                                            alt="Features tile icon 03"
+                                            src={require('./../../assets/images/class.svg')}
+                                            alt="Class"
                                             width={64}
                                             height={64} />
                                     </div>
                                 </div>
                                 <div className="features-tiles-item-content">
                                     <h4 className="mt-0 mb-8">
-                                        <span className="text-color-primary">General</span> Tech Path Mentorship
+                                        <span className="text-color-primary">Class</span> Mentoring
                     </h4>
                                     <p className="m-0 text-sm">
-                                        Interested in Computer Science but not sure where to go? We offer mentorship services to help you determine which path for computer science is right for you!
+                                        In case that 1:1's are too expensive or you prefer to work with others, we also offer class mentoring sessions for tech interview prep!
                     </p>
                                 </div>
                             </div>

@@ -70,7 +70,7 @@ const FeaturesSplit = ({
                   Step one
                   </div>
                 <h3 className="mt-0 mb-12">
-                  Pre-Screening Interview
+                <span className="text-color-primary">Pre-Screening</span> Interview
                   </h3>
                 <p className="m-0">
                   In order to place you with our best mentor possible, we first need to figure out which area you will need the most help in. Therefore, we will schedule a 1:1 interview with you so that we can gauge what area you need help in. This may include a technical exercise.
@@ -96,7 +96,7 @@ const FeaturesSplit = ({
                   Step two
                   </div>
                 <h3 className="mt-0 mb-12">
-                  Mentorship Pairing
+                  Mentorship <span className="text-color-primary">Pairing</span>
                   </h3>
                 <p className="m-0">
                   After the pre-screening, Mentordome will reach out to you with a mentorship pairing. You and the mentor will be able to schedule the best time for mentorship 1:1 and we will working closely with you to help you acheive your goals.
@@ -122,7 +122,7 @@ const FeaturesSplit = ({
                   Step Three
                   </div>
                 <h3 className="mt-0 mb-12">
-                  Mentorship
+                <span className="text-color-primary">Mentorship</span>
                   </h3>
                 <p className="m-0">
                   You and the mentor are now able to focus on completing hourly mentorship sessions in our various services with your own fixed schedule. We will help to closely monitor your progress through daily reports from the mentors.
@@ -148,7 +148,7 @@ const FeaturesSplit = ({
                 Step Four
                   </div>
                 <h3 className="mt-0 mb-12">
-                Feedback Consultation
+                <span className="text-color-primary">Feedback</span> Consultation
                   </h3>
                 <p className="m-0">
                 After every mentorship/tutoring session, you will be able to give feedback to your mentor and we will be able to talk with you if you have any problems with the mentorship. You will also be allowed to ask to switch mentors in case there are any problems.
