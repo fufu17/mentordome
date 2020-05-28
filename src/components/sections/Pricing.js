@@ -1,10 +1,7 @@
 import React, { useState } from 'react';
 import classNames from 'classnames';
 import { SectionProps } from '../../utils/SectionProps';
-import ButtonGroup from '../elements/ButtonGroup';
-import Button from '../elements/Button';
-import Image from '../elements/Image';
-import Modal from '../elements/Modal';
+import PricingPageImage from './partials/PricingPageImage';
 
 const propTypes = {
     ...SectionProps.types
@@ -40,12 +37,8 @@ const Pricing = ({
         bottomDivider && 'has-bottom-divider'
     );
 
-    const formColor = {
-        backgroundColor: 'lightgrey',
-        paddingTop: '40px',
-        paddingBottom: '40px',
-        borderRadius: '20px',
-        boxShadow: '10px 15px #888888'
+    const pricingImageStyle = {
+        marginTop: "-70px"
     }
 
     return (
@@ -61,13 +54,14 @@ const Pricing = ({
             </h1>
                         <div className="container-xs">
                             <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="400">
-                                This application only takes a few minutes and we will get back to you through email within the next day
+                                We have a variety of pricing options available in order to be more flexible for our students to help you reach your goals! If you have any questions about the pricing, feel free to contact us from the homepage.
                 </p>
                             <div className="reveal-from-bottom" data-reveal-delay="600">
                                 <div>
                                 </div>
                             </div>
                         </div>
+                        <PricingPageImage style = {pricingImageStyle} />
                     </div>
                 </div>
             </div>
