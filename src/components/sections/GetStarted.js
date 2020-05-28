@@ -101,15 +101,19 @@ const GetStarted = ({
         bottomDivider && 'has-bottom-divider'
     );
 
-    const formColor = {
-        backgroundColor: '#E8E8E8',
-        paddingTop: '40px',
-        paddingBottom: '40px',
-        borderRadius: '20px',
-    }
+    // const formColor = {
+    //     backgroundColor: '#E8E8E8',
+    //     paddingTop: '40px',
+    //     paddingBottom: '40px',
+    //     borderRadius: '20px',
+    // }
 
     const inputDec = {
         borderRadius: "11px"
+    }
+
+    const marginBottom = {
+        marginBottom: "60px"
     }
 
     return (
@@ -124,12 +128,12 @@ const GetStarted = ({
                             <span className="text-color-primary">Application</span> Form
             </h1>
                         <div className="container-xs">
-                            <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="400">
+                            <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="400" style = {marginBottom}>
                                 This application only takes a few minutes and we will get back to you through email within the next day
                 </p>
                             <div className="reveal-from-bottom" data-reveal-delay="600">
                                 <div>
-                                    <form style={formColor}>
+                                    <form>
                                         <label>
                                             <span className="text-color-primary"> <b>First Name:</b></span> &nbsp;
                                         <input id="first_name" style={inputDec} type="text" name="first_name" />

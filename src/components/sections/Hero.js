@@ -3,8 +3,6 @@ import classNames from 'classnames';
 import { SectionProps } from '../../utils/SectionProps';
 import ButtonGroup from '../elements/ButtonGroup';
 import Button from '../elements/Button';
-import Image from '../elements/Image';
-import Modal from '../elements/Modal';
 import LandingPageImage from './partials/LandingPageImage';
 
 const propTypes = {
@@ -92,7 +90,7 @@ const Hero = ({
                     <Button tag="a" color="primary" wideMobile href="signup">
                       Get started
                     </Button>
-                    <Button tag="a" color="dark" wideMobile href="/">
+                    <Button tag="a" color="dark" wideMobile href="mailto:mentordome@gmail.com">
                       Contact Us
                     </Button>
                   </ButtonGroup>
