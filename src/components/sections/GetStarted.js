@@ -68,7 +68,9 @@ const GetStarted = ({
             buttons: [
                 {
                     label: 'Done',
-                    onClick: () =>  window.location.reload(false)
+                    onClick: () =>  setTimeout(function(){
+                        window.location.reload();
+                      })
                 }
             ],
             customUI: ({ onClose }) => {
@@ -80,9 +82,15 @@ const GetStarted = ({
                   </div>
                 );
               },
-            afterClose: () => { window.location.reload(false); },
-            onClickOutside: () => { window.location.reload(false); },
-            onKeypressEscape: () => { window.location.reload(false); }
+            afterClose: () => { setTimeout(function(){
+                window.location.reload();
+              }); },
+            onClickOutside: () => { setTimeout(function(){
+                window.location.reload();
+              }); },
+            onKeypressEscape: () => { setTimeout(function(){
+                window.location.reload();
+              }); }
         })
     }
 
