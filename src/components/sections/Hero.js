@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import classNames from 'classnames';
 import { SectionProps } from '../../utils/SectionProps';
+import { Link } from 'react-router-dom';
 import ButtonGroup from '../elements/ButtonGroup';
 import Button from '../elements/Button';
 import LandingPageImage from './partials/LandingPageImage';
@@ -87,9 +88,7 @@ const Hero = ({
                 </p>
                 <div className="reveal-from-bottom" data-reveal-delay="600">
                   <ButtonGroup>
-                    <Button tag="a" color="primary" wideMobile href="signup">
-                      Get started
-                    </Button>
+                  <Link to="signup" className="button button-primary button-wide-mobile button">Get Started</Link>
                     <Button tag="a" color="dark" wideMobile href="mailto:mentordome@gmail.com">
                       Contact Us
                     </Button>
