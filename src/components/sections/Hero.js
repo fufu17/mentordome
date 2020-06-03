@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import ButtonGroup from '../elements/ButtonGroup';
 import Button from '../elements/Button';
 import LandingPageImage from './partials/LandingPageImage';
+import Image from '../elements/Image';
 
 const propTypes = {
   ...SectionProps.types
@@ -88,7 +89,7 @@ const Hero = ({
                 </p>
                 <div className="reveal-from-bottom" data-reveal-delay="600">
                   <ButtonGroup>
-                  <Link to="signup" className="button button-primary button-wide-mobile button">Get Started</Link>
+                    <Link to="signup" className="button button-primary button-wide-mobile button">Get Started</Link>
                     <Button tag="a" color="dark" wideMobile href="mailto:mentordome@gmail.com">
                       Contact Us
                     </Button>
@@ -101,7 +102,11 @@ const Hero = ({
                   && 'split-item-image-fill'
                 )}
                 data-reveal-container=".split-item">
-                <LandingPageImage />
+                <Image
+                  src={require('./../../assets/images/up2.png')}
+                  alt="Open"
+                  width={700}
+                  height={700} />
               </div>
             </div>
           </div>
