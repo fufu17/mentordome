@@ -5,7 +5,7 @@ import Button from '../elements/Button';
 import firebase from 'firebase';
 import { confirmAlert } from 'react-confirm-alert';
 import 'react-confirm-alert/src/react-confirm-alert.css';
-import Textfield from '@material-ui/core/textfield';
+import { TextField } from '@material-ui/core';
 
 //initialize firebase
 var firebaseConfig = {
@@ -150,24 +150,24 @@ const GetStarted = ({
                             <div className="reveal-from-bottom" data-reveal-delay="600">
                                 <div>
                                     <form noValidate autoComplete="off">
-                                        <Textfield style={textBox} id="first_name" name="first_name" label="First Name" variant="outlined" />
+                                        <TextField style={textBox} id="first_name" name="first_name" label="First Name" variant="outlined" />
                                         <br />
                                         <br />
-                                        <Textfield style={textBox} id="last_name" name="last_name" label="Last Name" variant="outlined" />
+                                        <TextField style={textBox} id="last_name" name="last_name" label="Last Name" variant="outlined" />
                                         <br />
                                         <br />
-                                        <Textfield style={textBox} id="email" name="email" label="Email Address" variant="outlined" />
+                                        <TextField style={textBox} id="email" name="email" label="Email Address" variant="outlined" />
                                         <br />
                                         <br />
-                                        <Textfield style={textBox} id="occupation" name="occupation" label="Current Occupation" variant="outlined" />
+                                        <TextField style={textBox} id="occupation" name="occupation" label="Current Occupation" variant="outlined" />
                                         <br />
                                         <br />
-                                        <Textfield style={textBox} id="reason" name="reason" label="Reason For Joining" variant="outlined" multiline
+                                        <TextField style={textBox} id="reason" name="reason" label="Reason For Joining" variant="outlined" multiline
                                             rows={6}
                                             rowsMax={10} />
                                         <br />
                                         <br />
-                                        <Textfield style={textBox} id="questions" name="questions" label="Questions and Concerns" variant="outlined" multiline
+                                        <TextField style={textBox} id="questions" name="questions" label="Questions and Concerns" variant="outlined" multiline
                                             rows={10}
                                             rowsMax={12} />
                                         <br />
