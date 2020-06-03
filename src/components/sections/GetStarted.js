@@ -5,6 +5,11 @@ import Button from '../elements/Button';
 import firebase from 'firebase';
 import { confirmAlert } from 'react-confirm-alert';
 import 'react-confirm-alert/src/react-confirm-alert.css';
+import Textfield from '@material-ui/core/textfield';
+import Select from '@material-ui/core/Select';
+import InputLabel from '@material-ui/core/InputLabel';
+import MenuItem from '@material-ui/core/MenuItem';
+import TextField from '@material-ui/core/TextField';
 
 //initialize firebase
 var firebaseConfig = {
@@ -68,29 +73,35 @@ const GetStarted = ({
             buttons: [
                 {
                     label: 'Done',
-                    onClick: () =>  setTimeout(function(){
+                    onClick: () => setTimeout(function () {
                         window.location.reload();
-                      })
+                    })
                 }
             ],
             customUI: ({ onClose }) => {
                 return (
-                  <div className='custom-ui'>
-                    <h1><span className="text-color-primary">Thanks</span> for joining us!</h1>
-                    <p className="text-color-low" >We look forward to working with you and will get back to you within the next day.</p>
-                    <Button style={confirmButtonStyling} color="primary" onClick={onClose}>Done</Button>
-                  </div>
+                    <div className='custom-ui'>
+                        <h1><span className="text-color-primary">Thanks</span> for joining us!</h1>
+                        <p className="text-color-low" >We look forward to working with you and will get back to you within the next day.</p>
+                        <Button style={confirmButtonStyling} color="primary" onClick={onClose}>Done</Button>
+                    </div>
                 );
-              },
-            afterClose: () => { setTimeout(function(){
-                window.location.reload();
-              }); },
-            onClickOutside: () => { setTimeout(function(){
-                window.location.reload();
-              }); },
-            onKeypressEscape: () => { setTimeout(function(){
-                window.location.reload();
-              }); }
+            },
+            afterClose: () => {
+                setTimeout(function () {
+                    window.location.reload();
+                });
+            },
+            onClickOutside: () => {
+                setTimeout(function () {
+                    window.location.reload();
+                });
+            },
+            onKeypressEscape: () => {
+                setTimeout(function () {
+                    window.location.reload();
+                });
+            }
         })
     }
 
@@ -116,12 +127,11 @@ const GetStarted = ({
     //     borderRadius: '20px',
     // }
 
-    const inputDec = {
-        borderRadius: "11px"
-    }
-
     const marginBottom = {
         marginBottom: "60px"
+    }
+    const textBox = {
+        width: "500px"
     }
 
     return (
@@ -136,60 +146,89 @@ const GetStarted = ({
                             <span className="text-color-primary">Application</span> Form
             </h1>
                         <div className="container-xs">
-                            <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="400" style = {marginBottom}>
+                            <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="400" style={marginBottom}>
                                 This application only takes a few minutes and we will get back to you through email within the next day
                 </p>
                             <div className="reveal-from-bottom" data-reveal-delay="600">
                                 <div>
-                                    <form>
-                                        <label>
-                                            <span className="text-color-primary"> <b>First Name:</b></span> &nbsp;
-                                        <input id="first_name" style={inputDec} type="text" name="first_name" />
-                                        </label>
+                                    <form noValidate autoComplete="off">
+                                        <Textfield style={textBox} id="first_name" name="first_name" label="First Name" variant="outlined" />
                                         <br />
                                         <br />
-                                        <label>
-                                            <span className="text-color-primary"> <b>Last Name:</b></span> &nbsp;
-                                        <input id="last_name" style={inputDec} type="text" name="last_name" />
-                                        </label>
+                                        <Textfield style={textBox} id="last_name" name="last_name" label="Last Name" variant="outlined" />
                                         <br />
                                         <br />
-                                        <label>
-                                            <span className="text-color-primary"> <b>Email:</b></span> &nbsp;
-                                        <input id="email" style={inputDec} type="text" name="email" />
-                                        </label>
+                                        <Textfield style={textBox} id="email" name="email" label="Email Address" variant="outlined" />
                                         <br />
                                         <br />
-                                        <label>
-                                            <span className="text-color-primary"> <b>Occupation:</b></span> &nbsp;
-                                            <select id="occupation">
-                                                <option selected value="student">Student</option>
-                                                <option value="junior engineer">Junior Engineer</option>
-                                                <option value="freelancer">Freelancer</option>
-                                                <option value="non-tech">Non-Tech</option>
-                                            </select>
-                                        </label>
+                                        <Textfield style={textBox} id="occupation" name="occupation" label="Current Occupation" variant="outlined" />
                                         <br />
                                         <br />
-                                        <br />
-                                        <label>
-                                            <span className="text-color-primary"> <b>Reason For Joining:</b></span> &nbsp;
-                                        <textarea id="reason" style={inputDec} type="text" name="reason" rows="4" cols="50" />
-                                        </label>
+                                        <Textfield style={textBox} id="reason" name="reason" label="Reason For Joining" variant="outlined" multiline
+                                            rows={6}
+                                            rowsMax={10} />
                                         <br />
                                         <br />
-                                        <br />
-                                        <label>
-                                            <span className="text-color-primary"> <b>Questions and Concerns:</b></span> &nbsp;
-                                        <textarea id="questions" style={inputDec} type="text" name="questions" rows="4" cols="50" />
-                                        </label>
+                                        <Textfield style={textBox} id="questions" name="questions" label="Questions and Concerns" variant="outlined" multiline
+                                            rows={10}
+                                            rowsMax={12} />
                                         <br />
                                         <br />
                                         <br />
                                         <Button type="submit" tag="a" color="primary" onClick={submitForm}>
                                             Submit
                                         </Button>
+
                                     </form>
+                                    {/* <form>
+                                            <label>
+                                                <span className="text-color-primary"> <b>First Name:</b></span> &nbsp;
+                                        <input id="first_name" style={inputDec} type="text" name="first_name" />
+                                            </label>
+                                            <br />
+                                            <br />
+                                            <label>
+                                                <span className="text-color-primary"> <b>Last Name:</b></span> &nbsp;
+                                        <input id="last_name" style={inputDec} type="text" name="last_name" />
+                                            </label>
+                                            <br />
+                                            <br />
+                                            <label>
+                                                <span className="text-color-primary"> <b>Email:</b></span> &nbsp;
+                                        <input id="email" style={inputDec} type="text" name="email" />
+                                            </label>
+                                            <br />
+                                            <br />
+                                            <label>
+                                                <span className="text-color-primary"> <b>Occupation:</b></span> &nbsp;
+                                            <select id="occupation">
+                                                    <option selected value="student">Student</option>
+                                                    <option value="junior engineer">Junior Engineer</option>
+                                                    <option value="freelancer">Freelancer</option>
+                                                    <option value="non-tech">Non-Tech</option>
+                                                </select>
+                                            </label>
+                                            <br />
+                                            <br />
+                                            <br />
+                                            <label>
+                                                <span className="text-color-primary"> <b>Reason For Joining:</b></span> &nbsp;
+                                        <textarea id="reason" style={inputDec} type="text" name="reason" rows="4" cols="50" />
+                                            </label>
+                                            <br />
+                                            <br />
+                                            <br />
+                                            <label>
+                                                <span className="text-color-primary"> <b>Questions and Concerns:</b></span> &nbsp;
+                                        <textarea id="questions" style={inputDec} type="text" name="questions" rows="4" cols="50" />
+                                            </label>
+                                            <br />
+                                            <br />
+                                            <br />
+                                            <Button type="submit" tag="a" color="primary" onClick={submitForm}>
+                                                Submit
+                                        </Button>
+                                        </form> */}
                                 </div>
                             </div>
                         </div>
