@@ -50,18 +50,17 @@ const Pricing = ({
                 <div className={innerClasses}>
                     <div className="hero-content">
                         <h1 className="mt-0 mb-16 reveal-from-bottom" data-reveal-delay="200">
-                            Our <span className="text-color-primary">Pricing</span>
+                            <span className="text-color-primary">Answers</span> to Commonly Asked <span className="text-color-primary">Questions</span>
             </h1>
                         <div className="container-xs">
                             <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="400">
-                                We have a variety of pricing options available in order to be more flexible for our students to help you reach your goals! If you have any questions about the pricing, feel free to email us at <span className="text-color-primary">mentordome@gmail.com</span>
+                                We have compiled a list of the most commonly asked questions about our service and website. If you have a question that is not on here, make sure to email us at <span className="text-color-primary">mentordome@gmail.com</span>
                 </p>
                             <div className="reveal-from-bottom" data-reveal-delay="600">
                                 <div>
                                 </div>
                             </div>
                         </div>
-                        <PricingPageImage style = {pricingImageStyle} />
                     </div>
                 </div>
             </div>

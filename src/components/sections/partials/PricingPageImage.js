@@ -21,7 +21,7 @@ const PricingPageImage = ({
       <h1 className="m-0">
         <Link to="/">
           <Image
-            src={require('./../../../assets/images/pricing.png')}
+            src={require('./../../../assets/images/teaching2.png')}
             alt="Open"
             width={1000}
             height={1000} />

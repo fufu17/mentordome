@@ -129,7 +129,7 @@ const GetStarted = ({
         marginBottom: "60px"
     }
     const textBox = {
-        width: "500px"
+        width: "600px"
     }
 
     return (
