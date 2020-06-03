@@ -6,10 +6,6 @@ import firebase from 'firebase';
 import { confirmAlert } from 'react-confirm-alert';
 import 'react-confirm-alert/src/react-confirm-alert.css';
 import Textfield from '@material-ui/core/textfield';
-import Select from '@material-ui/core/Select';
-import InputLabel from '@material-ui/core/InputLabel';
-import MenuItem from '@material-ui/core/MenuItem';
-import TextField from '@material-ui/core/TextField';
 
 //initialize firebase
 var firebaseConfig = {
@@ -50,6 +46,7 @@ const GetStarted = ({
 
     function submitForm(e) {
         e.preventDefault();
+        var today = new Date();
         const applicantsRef = firebase.database().ref('applicants');
         const applicant = {
             first_name: document.getElementById('first_name').value,
@@ -57,13 +54,14 @@ const GetStarted = ({
             email: document.getElementById('email').value,
             occupation: document.getElementById('occupation').value,
             reason: document.getElementById('reason').value,
-            questions: document.getElementById('questions').value
+            questions: document.getElementById('questions').value,
+            date: today.toString()
         }
         applicantsRef.push(applicant);
         document.getElementById('first_name').value = "";
         document.getElementById('last_name').value = "";
         document.getElementById('email').value = "";
-        document.getElementById('occupation').value = "student";
+        document.getElementById('occupation').value = "";
         document.getElementById('reason').value = "";
         document.getElementById('questions').value = "";
 
