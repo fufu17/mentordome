@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { Link } from 'react-router-dom';
 import Logo from './partials/Logo';
+import Image from '../elements/Image';
 
 const propTypes = {
   navPosition: PropTypes.string,
@@ -44,7 +45,7 @@ const Header = ({
       document.addEventListener('click', clickOutside);
       closeMenu();
     };
-  });  
+  });
 
   const openMenu = () => {
     document.body.classList.add('off-nav-is-active');
@@ -66,13 +67,17 @@ const Header = ({
     if (!nav.current) return
     if (!isActive || nav.current.contains(e.target) || e.target === hamburger.current) return;
     closeMenu();
-  }  
+  }
 
   const classes = classNames(
     'site-header',
     bottomOuterDivider && 'has-bottom-divider',
     className
   );
+
+  const fontColor = {
+    fontWeight: "bold"
+  }
 
   return (
     <header
@@ -112,10 +117,10 @@ const Header = ({
                       navPosition && `header-nav-${navPosition}`
                     )}>
                     <li>
-                      <Link to="faq" onClick={closeMenu}>FAQ</Link>
+                      <Link to="faq" onClick={closeMenu}><b>FAQ</b></Link>
                     </li>
                     <li>
-                      <Link to="pricing" onClick={closeMenu}>Pricing</Link>
+                      <Link to="pricing" onClick={closeMenu} style={fontColor}>Pricing</Link>
                     </li>
                   </ul>
                   {!hideSignin &&
