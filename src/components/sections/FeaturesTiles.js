@@ -138,7 +138,7 @@ const FeaturesTiles = ({
                 </div>
                 <div className="features-tiles-item-content">
                   <h4 className="mt-0 mb-8">
-                  <span className="text-color-primary">Behavioral</span> Interview Prepartion for Top Tech Companies
+                  <span className="text-color-primary">Behavioral</span> Interview Preparation for Top Tech Companies
                     </h4>
                   <p className="m-0 text-sm">
                     We also offer behavioral interview preparation with top tier tutors for those who are having trouble with speaking about themselves during interview with tech companies
