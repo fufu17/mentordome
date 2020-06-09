@@ -85,7 +85,7 @@ const Hero = ({
                   Tier 1 Mentoring for<br></br><span className="text-color-primary">Engineers</span> and <span className="text-color-primary">Students</span>
                 </h1>
                 <p className="mb-32 reveal-from-bottom" data-reveal-delay="400">
-                  We have engineers from top tier companies to <br></br> help you prepare for technical interviews and <br></br> gain advice to improve your career.
+                  We have engineers from top tier companies to <br></br> help you prepare for technical interviews and <br></br> give advice to improve your career.
                 </p>
                 <div className="reveal-from-bottom" data-reveal-delay="600">
                   <ButtonGroup>

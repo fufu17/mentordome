@@ -75,7 +75,7 @@ const FeaturesTiles = ({
                   <span className="text-color-primary">Mentorship</span>  of <span className="text-color-primary">Junior</span>  Engineers
                     </h4>
                   <p className="m-0 text-sm">
-                    If you're a junior or entry level entry engineer who wants get better as a coder, we offer 1:1 with high level engineers from top tech Companies including Facebook, Google, and Amazon.
+                    If you're a junior or entry level engineer who wants get better as a coder, we offer 1:1 sessions with high level engineers from top tech Companies including Facebook, Google, and Amazon.
                     </p>
                 </div>
               </div>
@@ -141,7 +141,7 @@ const FeaturesTiles = ({
                   <span className="text-color-primary">Behavioral</span> Interview Preparation for Top Tech Companies
                     </h4>
                   <p className="m-0 text-sm">
-                    We also offer behavioral interview preparation with top tier tutors for those who are having trouble with speaking about themselves during interview with tech companies
+                    We also offer behavioral interview preparation with top tier tutors for those who are having trouble with speaking about themselves during interviews with tech companies.
                     </p>
                 </div>
               </div>
@@ -163,7 +163,7 @@ const FeaturesTiles = ({
                   <span className="text-color-primary">Technical</span> Interview Tutoring for Top Tech Companies
                     </h4>
                   <p className="m-0 text-sm">
-                    We provide technical interview tutoring with mentors from top tech companies with many years of interviewing experience for those who wants to ace the technical portion of the interviews.
+                    We provide technical interview tutoring with mentors from top tech companies who have years of interviewing experience for those who want to ace the technical portion of the interview.
                     </p>
                 </div>
               </div>

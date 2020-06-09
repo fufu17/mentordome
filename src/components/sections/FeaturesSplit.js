@@ -51,7 +51,7 @@ const FeaturesSplit = ({
 
   const sectionHeader = {
     title: 'How It Works',
-    paragraph: 'Whether you are a student trying to find a software engineering job or a junior engineer that wants to improve their general coding ability, Mentordome is here to help! We have a robust process that will allow us to pair you with top tier engineers.'
+    paragraph: 'Whether you are a student trying to find a software engineering job or a junior engineer who wants to improve their general coding ability, Mentordome is here to help! We have a robust process that will allow us to pair you with top tier engineers.'
   };
 
   return (
@@ -73,7 +73,7 @@ const FeaturesSplit = ({
                 <span className="text-color-primary">Pre-Screening</span> Interview
                   </h3>
                 <p className="m-0">
-                  In order to place you with our best mentor possible, we first need to figure out which area you will need the most help in. Therefore, we will schedule a 1:1 interview with you so that we can gauge what area you need help in. This may include a technical exercise.
+                  In order to place you with our best mentor possible, we first need to figure out which area you will need the most help in. Therefore, we will schedule a 1:1 interview with you so that we can gauge what area you need help in.
                   </p>
               </div>
               <div className={
@@ -99,7 +99,7 @@ const FeaturesSplit = ({
                   Mentorship <span className="text-color-primary">Pairing</span>
                   </h3>
                 <p className="m-0">
-                  After the pre-screening, Mentordome will reach out to you with a mentorship pairing. You and the mentor will be able to schedule the best time for mentorship 1:1 and we will working closely with you to help you acheive your goals.
+                  After the pre-screening, Mentordome will reach out to you with a mentorship pairing. You and the mentor will be able to schedule the best time for a 1:1 mentorship and we will work closely with you to help you acheive your goals.
                   </p>
               </div>
               <div className={

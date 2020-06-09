@@ -105,7 +105,7 @@ const FeaturesTiles = ({
                   Am I allowed to switch mentors between sessions?
                     </h4>
                   <p className="m-0 text-sm">
-                    Yes you can! We ask for feedback to the students after each session and if you feel that you are not able to work well with your mentor, we will be happy to pair you up with someone else!
+                    Yes you can! We ask for feedback from the students after each session and if you feel that you are not able to work well with your mentor, we will be happy to pair you up with someone else!
                     </p>
                 </div>
               </div>

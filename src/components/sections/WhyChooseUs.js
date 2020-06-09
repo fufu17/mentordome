@@ -78,7 +78,7 @@ const WhyChooseUs = ({
                                         <span className="text-color-primary">Competitive</span>  Rates
                     </h4>
                                     <p className="m-0 text-sm">
-                                        We offer cheaper prices and more flexible packages that all of our competitors in the tech career accelerator space and online tech interview coaching.
+                                        We offer cheaper prices with more flexible packages that all of our competitors in both the tech career accelerator and online interview coaching space.
                     </p>
                                 </div>
                             </div>
@@ -100,7 +100,7 @@ const WhyChooseUs = ({
                                         <span className="text-color-primary">Flexible</span>  Schedule
                     </h4>
                                     <p className="m-0 text-sm">
-                                        We allow you to have a flexible schedule in that you can decide when to have classes and give constant feedback on the performance of the mentors.
+                                        We allow you with a flexible schedule in which you can decide when to have classes and give constant feedback on the performance of the mentors.
                     </p>
                                 </div>
                             </div>
@@ -122,7 +122,7 @@ const WhyChooseUs = ({
                                         <span className="text-color-primary">Class</span> Mentoring
                     </h4>
                                     <p className="m-0 text-sm">
-                                        In case that 1:1's are too expensive or you prefer to work with others, we also offer class mentoring sessions for tech interview prep!
+                                        In case that 1:1 sessions are too expensive or you prefer to work with others, we also offer dual mentoring sessions for all of our services!
                     </p>
                                 </div>
                             </div>
